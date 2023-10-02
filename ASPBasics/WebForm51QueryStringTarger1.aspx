@@ -18,7 +18,7 @@
                 <SortedAscendingCellStyle BackColor="#F1F1F1" />
                 <SortedAscendingHeaderStyle BackColor="#808080" />
                 <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                <SortedDescendingHeaderStyle BackColor="#383838" />
+                <SortedDescendingHeaderStyle BackColor="#383839" />
             </asp:GridView>
         </div>
     </form>
