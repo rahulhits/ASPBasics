@@ -13,5 +13,10 @@ namespace ASPBasics
 		{
 
 		}
-	}
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+			Response.Redirect("target.aspx?I=" + TextBox1.Text);
+        }
+    }
 }

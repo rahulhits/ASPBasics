@@ -15,7 +15,7 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" BackColor="#CCFF99" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large" Text="Submit" />
+            <asp:Button ID="Button1" runat="server" BackColor="#CCFF99" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large" Text="Submit" OnClick="Button1_Click" />
         </div>
     </form>
 </body>
