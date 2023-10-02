@@ -1,0 +1,349 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97D5A9A3-8647-4CEC-A2AB-5105441A59DA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASPBasics</RootNamespace>
+    <AssemblyName>ASPBasics</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44365</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="WebForm1ConfigSetting.aspx" />
+    <Content Include="WebForm29DBconnect.aspx" />
+    <Content Include="WebForm30TableCreation.aspx" />
+    <Content Include="WebForm31IUDC.aspx" />
+    <Content Include="WebForm32SP.aspx" />
+    <Content Include="WebForm33ParamSP.aspx" />
+    <Content Include="WebForm34insertUpdateUsingSP.aspx" />
+    <Content Include="WebForm35DropDown.aspx" />
+    <Content Include="WebForm36RepeterControl.aspx" />
+    <Content Include="WebForm36RepeterTableDesign.aspx" />
+    <Content Include="WebForm37DataList.aspx" />
+    <Content Include="WebForm37GridView.aspx" />
+    <Content Include="WebForm38GridView.aspx" />
+    <Content Include="WebForm39OwnWayGridView.aspx" />
+    <Content Include="WebForm40GridViewSummary.aspx" />
+    <Content Include="WebForm40ObjectDataSource.aspx" />
+    <Content Include="WebForm41.aspx" />
+    <Content Include="WebForm42DetailsView.aspx" />
+    <Content Include="WebForm42formView.aspx" />
+    <Content Include="WebForm43RetriveValueFromConfigFile.aspx" />
+    <Content Include="WebForm44ConnectionStringGlobal.aspx" />
+    <Content Include="WebForm45Presentation.aspx" />
+    <Content Include="WebForm46HiddenField.aspx" />
+    <Content Include="WebForm47TargetWebPage.aspx" />
+    <Content Include="WebForm48QueryString.aspx" />
+    <Content Include="WebForm49QueryStringTarget.aspx" />
+    <Content Include="WebForm50QueryStringSource.aspx" />
+    <Content Include="WebForm51QueryStringTarger1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business45.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Preasenation55.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1ConfigSetting.aspx.cs">
+      <DependentUpon>WebForm1ConfigSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1ConfigSetting.aspx.designer.cs">
+      <DependentUpon>WebForm1ConfigSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm29DBconnect.aspx.cs">
+      <DependentUpon>WebForm29DBconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm29DBconnect.aspx.designer.cs">
+      <DependentUpon>WebForm29DBconnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm30TableCreation.aspx.cs">
+      <DependentUpon>WebForm30TableCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm30TableCreation.aspx.designer.cs">
+      <DependentUpon>WebForm30TableCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm31IUDC.aspx.cs">
+      <DependentUpon>WebForm31IUDC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm31IUDC.aspx.designer.cs">
+      <DependentUpon>WebForm31IUDC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm32SP.aspx.cs">
+      <DependentUpon>WebForm32SP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm32SP.aspx.designer.cs">
+      <DependentUpon>WebForm32SP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm33ParamSP.aspx.cs">
+      <DependentUpon>WebForm33ParamSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm33ParamSP.aspx.designer.cs">
+      <DependentUpon>WebForm33ParamSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm34insertUpdateUsingSP.aspx.cs">
+      <DependentUpon>WebForm34insertUpdateUsingSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm34insertUpdateUsingSP.aspx.designer.cs">
+      <DependentUpon>WebForm34insertUpdateUsingSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm35DropDown.aspx.cs">
+      <DependentUpon>WebForm35DropDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm35DropDown.aspx.designer.cs">
+      <DependentUpon>WebForm35DropDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm36RepeterControl.aspx.cs">
+      <DependentUpon>WebForm36RepeterControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm36RepeterControl.aspx.designer.cs">
+      <DependentUpon>WebForm36RepeterControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm36RepeterTableDesign.aspx.cs">
+      <DependentUpon>WebForm36RepeterTableDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm36RepeterTableDesign.aspx.designer.cs">
+      <DependentUpon>WebForm36RepeterTableDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm37DataList.aspx.cs">
+      <DependentUpon>WebForm37DataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm37DataList.aspx.designer.cs">
+      <DependentUpon>WebForm37DataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm37GridView.aspx.cs">
+      <DependentUpon>WebForm37GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm37GridView.aspx.designer.cs">
+      <DependentUpon>WebForm37GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm38GridView.aspx.cs">
+      <DependentUpon>WebForm38GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm38GridView.aspx.designer.cs">
+      <DependentUpon>WebForm38GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm39OwnWayGridView.aspx.cs">
+      <DependentUpon>WebForm39OwnWayGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm39OwnWayGridView.aspx.designer.cs">
+      <DependentUpon>WebForm39OwnWayGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm40GridViewSummary.aspx.cs">
+      <DependentUpon>WebForm40GridViewSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm40GridViewSummary.aspx.designer.cs">
+      <DependentUpon>WebForm40GridViewSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm40ObjectDataSource.aspx.cs">
+      <DependentUpon>WebForm40ObjectDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm40ObjectDataSource.aspx.designer.cs">
+      <DependentUpon>WebForm40ObjectDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm41.aspx.cs">
+      <DependentUpon>WebForm41.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm41.aspx.designer.cs">
+      <DependentUpon>WebForm41.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm42DetailsView.aspx.cs">
+      <DependentUpon>WebForm42DetailsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm42DetailsView.aspx.designer.cs">
+      <DependentUpon>WebForm42DetailsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm42formView.aspx.cs">
+      <DependentUpon>WebForm42formView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm42formView.aspx.designer.cs">
+      <DependentUpon>WebForm42formView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm43RetriveValueFromConfigFile.aspx.cs">
+      <DependentUpon>WebForm43RetriveValueFromConfigFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm43RetriveValueFromConfigFile.aspx.designer.cs">
+      <DependentUpon>WebForm43RetriveValueFromConfigFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm44ConnectionStringGlobal.aspx.cs">
+      <DependentUpon>WebForm44ConnectionStringGlobal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm44ConnectionStringGlobal.aspx.designer.cs">
+      <DependentUpon>WebForm44ConnectionStringGlobal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm45Presentation.aspx.cs">
+      <DependentUpon>WebForm45Presentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm45Presentation.aspx.designer.cs">
+      <DependentUpon>WebForm45Presentation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm46HiddenField.aspx.cs">
+      <DependentUpon>WebForm46HiddenField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm46HiddenField.aspx.designer.cs">
+      <DependentUpon>WebForm46HiddenField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm47TargetWebPage.aspx.cs">
+      <DependentUpon>WebForm47TargetWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm47TargetWebPage.aspx.designer.cs">
+      <DependentUpon>WebForm47TargetWebPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm48QueryString.aspx.cs">
+      <DependentUpon>WebForm48QueryString.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm48QueryString.aspx.designer.cs">
+      <DependentUpon>WebForm48QueryString.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm49QueryStringTarget.aspx.cs">
+      <DependentUpon>WebForm49QueryStringTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm49QueryStringTarget.aspx.designer.cs">
+      <DependentUpon>WebForm49QueryStringTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm50QueryStringSource.aspx.cs">
+      <DependentUpon>WebForm50QueryStringSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm50QueryStringSource.aspx.designer.cs">
+      <DependentUpon>WebForm50QueryStringSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm51QueryStringTarger1.aspx.cs">
+      <DependentUpon>WebForm51QueryStringTarger1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm51QueryStringTarger1.aspx.designer.cs">
+      <DependentUpon>WebForm51QueryStringTarger1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59559</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44365/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
