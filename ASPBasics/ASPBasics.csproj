@@ -96,6 +96,10 @@
     <Content Include="WebForm49QueryStringTarget.aspx" />
     <Content Include="WebForm50QueryStringSource.aspx" />
     <Content Include="WebForm51QueryStringTarger1.aspx" />
+    <Content Include="WebForm52CookieSource2.aspx" />
+    <Content Include="WebForm52Source3.aspx" />
+    <Content Include="WebForm52Target2.aspx" />
+    <Content Include="WebForm53Target3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business45.cs" />
@@ -297,6 +301,34 @@
     </Compile>
     <Compile Include="WebForm51QueryStringTarger1.aspx.designer.cs">
       <DependentUpon>WebForm51QueryStringTarger1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm52CookieSource2.aspx.cs">
+      <DependentUpon>WebForm52CookieSource2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm52CookieSource2.aspx.designer.cs">
+      <DependentUpon>WebForm52CookieSource2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm52Source3.aspx.cs">
+      <DependentUpon>WebForm52Source3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm52Source3.aspx.designer.cs">
+      <DependentUpon>WebForm52Source3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm52Target2.aspx.cs">
+      <DependentUpon>WebForm52Target2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm52Target2.aspx.designer.cs">
+      <DependentUpon>WebForm52Target2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm53Target3.aspx.cs">
+      <DependentUpon>WebForm53Target3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm53Target3.aspx.designer.cs">
+      <DependentUpon>WebForm53Target3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
